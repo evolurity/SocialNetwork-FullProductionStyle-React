@@ -9,5 +9,5 @@ export function classNames(cls: string, mods: Mods, additional: string[]): strin
             .map(([cls]) => cls)
     ].join(' ');
 }
-
+//test
 classNames('remove-btn', { hovered: true, selectable: true, red: true }, ['withPaddings'])
