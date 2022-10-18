@@ -11,6 +11,7 @@ export const Navbar = ({className}:NavbarProps) => {
     return (
         <div className={classNames(styles.navbar, {}, [className])}>
             <div className={styles.links}>
+                {/*todo?/*/}
                 <AppLink to={'/'} className={styles.mainLink}>Главная</AppLink>
                 <AppLink to={'/about'}>О сайте</AppLink>
             </div>
