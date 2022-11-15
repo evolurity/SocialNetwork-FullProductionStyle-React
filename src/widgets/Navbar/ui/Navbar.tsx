@@ -7,9 +7,9 @@ interface NavbarProps {
     className?: string;
 }
 
-export function Navbar({ className }:NavbarProps) {
+export function Navbar({ className }: NavbarProps) {
     return (
-        <div className={classNames(styles.navbar, {}, [className])}>
+        <div className={classNames(styles.Navbar, {}, [className])}>
             <div className={styles.links}>
                 <AppLink to="/" className={styles.mainLink}>Главная</AppLink>
                 <AppLink to="/about">О сайте</AppLink>
