@@ -9,8 +9,6 @@ module.exports = {
         'airbnb',
         'plugin:i18next/recommended',
     ],
-    overrides: [
-    ],
     parser: '@typescript-eslint/parser',
     plugins: ['react', '@typescript-eslint', 'i18next'],
     parserOptions: {
@@ -37,10 +35,24 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'react/function-component-definition': 'off',
         'react/jsx-props-no-spreading': 'off',
-        'i18next/no-literal-string': ['error', { markupOnly: true }],
+        'i18next/no-literal-string':
+            ['error',
+                {
+                    markupOnly: true,
+                    ignoreAttribute: ['data-testid'],
+                },
+            ],
         'max-len': ['error', { ignoreComments: true, code: 100 }],
     },
     globals: {
         __IS_DEV__: true,
     },
+    overrides: [
+        {
+            files: ['**/src/**/*.test.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off',
+            },
+        },
+    ],
 };
