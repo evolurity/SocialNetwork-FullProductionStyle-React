@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
-    "noImplicitAny": true, //нельзя не указывать тип
+    "noImplicitAny": true,
+    //нельзя не указывать тип
     "module": "ESNext",
-    "target": "es5", //в какую специф. комплир. для поддержки в большинстве браузеров
+    "target": "es5",
+    //в какую специф. комплир. для поддержки в большинстве браузеров
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "*": ["./src/*"]
+      "*": [
+        "./src/*"
+      ]
     },
     //  esModuleInterop позволяет работать с пакетами, которые используют
     // common js как с обычными пакетами с помощью (import require() module.export) = common js
@@ -23,5 +27,8 @@
   },
   "exclude": [
     "node_modules"
+  ],
+  "include": [
+    "./config/jest/setupTests.ts"
   ]
 }
