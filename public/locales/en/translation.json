@@ -2,5 +2,6 @@
   "language": "English",
   "pageNotFound": "Page not found",
   "unexpectedError": "Unexpected error",
-  "reloadPage": "Reload page"
+  "reloadPage": "Reload page",
+  "toggle": "toggle"
 }

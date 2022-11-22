@@ -2,5 +2,6 @@
   "language": "Русский",
   "pageNotFound": "Страница не найдена",
   "unexpectedError": "Произошла непредвиденная ошибка",
-  "reloadPage": "Обновить страницу"
+  "reloadPage": "Обновить страницу",
+  "toggle": "toggle"
 }
