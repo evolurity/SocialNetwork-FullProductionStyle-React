@@ -3,5 +3,7 @@
   "pageNotFound": "Page not found",
   "unexpectedError": "Unexpected error",
   "reloadPage": "Reload page",
-  "toggle": "toggle"
+  "shortLang": "En",
+  "mainLink": "Main",
+  "aboutLink": "About"
 }
