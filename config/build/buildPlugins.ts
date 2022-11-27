@@ -11,7 +11,7 @@ export function buildPlugins({ paths, isDev }: BuildOptions): WebpackPluginInsta
             template: paths.html,
         }),
         new webpack.ProgressPlugin(),
-        new MiniCssExtractPlugin({
+        !isDev && new MiniCssExtractPlugin({
             filename: 'css/[name].[contenthash:8].css',
             chunkFilename: 'css/[name].[contenthash:8].css',
         }),
