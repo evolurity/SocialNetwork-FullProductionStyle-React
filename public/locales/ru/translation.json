@@ -6,5 +6,7 @@
   "shortLang": "Ru",
   "mainLink": "Главная",
   "aboutLink": "О сайте",
-  "login": "Войти"
+  "login": "Войти",
+  "inc": "inc",
+  "dec": "dec"
 }

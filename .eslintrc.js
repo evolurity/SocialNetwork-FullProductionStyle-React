@@ -39,6 +39,8 @@ module.exports = {
         'jsx-a11y/click-events-have-key-events': 'off',
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
+        'no-param-reassign': 'off',
+        'no-plusplus': 'off',
         'i18next/no-literal-string':
             ['error',
                 {
