@@ -8,5 +8,7 @@
   "aboutLink": "About",
   "login": "Login",
   "inc": "inc",
-  "dec": "dec"
+  "dec": "dec",
+  "enterUsername": "Enter username",
+  "enterPassword": "Enter password"
 }

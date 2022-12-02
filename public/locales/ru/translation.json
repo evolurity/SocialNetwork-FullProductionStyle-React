@@ -8,5 +8,7 @@
   "aboutLink": "О сайте",
   "login": "Войти",
   "inc": "inc",
-  "dec": "dec"
+  "dec": "dec",
+  "enterUsername": "Введите username",
+  "enterPassword": "Введите пароль"
 }
