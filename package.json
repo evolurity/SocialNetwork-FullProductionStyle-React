@@ -30,6 +30,7 @@
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
+    "@loki/is-loki-running": "^0.30.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
@@ -69,6 +70,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
     "json-server": "^0.17.0",
+    "jsonwebtoken": "^8.5.1",
     "loki": "^0.30.3",
     "mini-css-extract-plugin": "^2.5.3",
     "postcss": "^8.4.19",
@@ -86,8 +88,7 @@
     "webpack": "^5.69.1",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4",
-    "jsonwebtoken": "^8.5.1"
+    "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",

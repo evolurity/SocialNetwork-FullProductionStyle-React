@@ -3,6 +3,9 @@ import React, {
     ReactNode, useCallback, useEffect, useRef, useState,
 } from 'react';
 import { Portal } from 'shared/ui/Portal/Portal';
+import {
+    DisableAnimationsContext,
+} from 'shared/config/storybook/DisableAnimationDecorator/DIsableAnimationDecorator';
 import styles from './Modal.module.scss';
 
 interface ModalProps {
@@ -26,18 +29,23 @@ export const Modal = ({
     const [isOpening, setIsOpening] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
     const timerRef = useRef<ReturnType<typeof setTimeout>>();
+    const disableAnimations = React.useContext(DisableAnimationsContext);
 
     useEffect(() => {
         if (isOpen) {
             setIsMounted(true);
-            timerRef.current = setTimeout(() => {
+            if (disableAnimations) {
                 setIsOpening(true);
-            }, ANIMATION_DELAY);
+            } else {
+                timerRef.current = setTimeout(() => {
+                    setIsOpening(true);
+                }, ANIMATION_DELAY);
+            }
         }
         return () => {
             setIsOpening(false);
         };
-    }, [isOpen]);
+    }, [disableAnimations, isOpen]);
 
     const mods: Record<string, boolean> = {
         [styles.opened]: isOpen && isOpening,

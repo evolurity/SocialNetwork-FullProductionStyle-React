@@ -1,6 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
+import { DisableAnimationDecorator } from 'shared/config/storybook/DisableAnimationDecorator/DIsableAnimationDecorator';
 import { Modal } from './Modal';
 
 export default {
@@ -17,10 +18,11 @@ Primary.args = {
     isOpen: true,
     children: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at hic impedit itaque ratione sequi soluta? A atque culpa ducimus eius omnis, vero voluptatem. Beatae corporis cum debitis dolorem, dolores explicabo in iure laboriosam molestias nemo obcaecati officia quibusdam quis repellat repellendus sequi tempora voluptas voluptatem! Enim iusto nihil nostrum.\n',
 };
+Primary.decorators = [DisableAnimationDecorator];
 
 export const Dark = Template.bind({});
 Dark.args = {
     isOpen: true,
     children: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at hic impedit itaque ratione sequi soluta? A atque culpa ducimus eius omnis, vero voluptatem. Beatae corporis cum debitis dolorem, dolores explicabo in iure laboriosam molestias nemo obcaecati officia quibusdam quis repellat repellendus sequi tempora voluptas voluptatem! Enim iusto nihil nostrum.\n',
 };
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
+Dark.decorators = [ThemeDecorator(Theme.DARK), DisableAnimationDecorator];
