@@ -10,5 +10,8 @@
   "inc": "inc",
   "dec": "dec",
   "enterUsername": "Введите username",
-  "enterPassword": "Введите пароль"
+  "enterPassword": "Введите пароль",
+  "loginForm": "Форма авторизации",
+  "wrongInput": "Неверный логин или пароль",
+  "logout": "Выйти"
 }

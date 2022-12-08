@@ -10,5 +10,8 @@
   "inc": "inc",
   "dec": "dec",
   "enterUsername": "Enter username",
-  "enterPassword": "Enter password"
+  "enterPassword": "Enter password",
+  "loginForm": "Login form",
+  "wrongInput": "Uncorrected username or password",
+  "logout": "Log out"
 }
