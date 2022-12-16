@@ -13,7 +13,9 @@ export const loginByUsername = createAsyncThunk<User, LoginByUsernameData, { rej
     async (authData, thunkApi) => {
         try {
             const response = await axios.post<User>('http://localhost:8080/login', authData);
-            if (!response.data) throw new Error();
+            if (!response.data) {
+                throw new Error();
+            }
 
             localStorage.setItem(USER_LOCALSTORAGE_KEY, JSON.stringify(response.data));
             thunkApi.dispatch(userActions.setAuthData(response.data));
