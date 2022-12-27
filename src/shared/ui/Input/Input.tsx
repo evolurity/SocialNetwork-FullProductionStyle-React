@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import React, {
-    InputHTMLAttributes, useEffect, useRef, useState,
+    InputHTMLAttributes, memo, useEffect, useRef, useState,
 } from 'react';
 import styles from './Input.module.scss';
 
@@ -13,7 +13,7 @@ interface InputProps extends HTMLInputProps {
     autofocus?: boolean;
 }
 
-export const Input = ({
+export const Input = memo(({
     className,
     value,
     onChange,
@@ -74,4 +74,4 @@ export const Input = ({
             </div>
         </div>
     );
-};
+});

@@ -1,11 +1,12 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import './Loader.scss';
+import { memo } from 'react';
 
 interface LoaderProps {
     className?: string;
 }
 
-export const Loader = ({ className }:LoaderProps) => (
+export const Loader = memo(({ className }:LoaderProps) => (
     <div className={classNames('lds-ring', {}, [className])}>
         <div>
             <div />
@@ -14,4 +15,4 @@ export const Loader = ({ className }:LoaderProps) => (
             <div />
         </div>
     </div>
-);
+));
