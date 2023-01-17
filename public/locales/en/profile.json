@@ -1,3 +1,11 @@
 {
-  "profile": "Profile"
+  "profile": "Profile",
+  "profileLoadingError": "An error occurred while loading the profile",
+  "reloadMessage": "Try refreshing the page",
+  "yourName": "Your name",
+  "yourLastname": "Your lastname",
+  "yourAge": "Your age",
+  "yourCity": "Your city",
+  "yourAvatar": "Enter your avatar link",
+  "yourUsername": "Enter username"
 }

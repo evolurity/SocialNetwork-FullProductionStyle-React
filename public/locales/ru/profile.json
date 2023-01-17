@@ -1,3 +1,11 @@
 {
-  "profile": "Профиль"
+  "profile": "Профиль",
+  "profileLoadingError": "Произошла ошибка при загрузке профиля",
+  "reloadMessage": "Попробуйте обновить страницу",
+  "yourName": "Ваше имя",
+  "yourLastname": "Ваша фамилия",
+  "yourAge": "Ваш возраст",
+  "yourCity": "Ваш город",
+  "yourAvatar": "Введите ссылку на аватар",
+  "yourUsername": "Введите юзернейм"
 }

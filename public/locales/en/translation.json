@@ -14,5 +14,10 @@
   "enterPassword": "Enter password",
   "loginForm": "Login form",
   "wrongInput": "Uncorrected username or password",
-  "logout": "Log out"
+  "logout": "Log out",
+  "edit": "Edit",
+  "cancel": "Cancel",
+  "save": "Save",
+  "selectCurrency": "Select currency",
+  "selectCountry": "Select country"
 }

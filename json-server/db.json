@@ -1,9 +1,17 @@
 {
   "posts": [
-    { "id": "1", "title": "json-server", "author": "typicode" }
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    }
   ],
   "comments": [
-    { "id": "1", "body": "some comment", "postId": "1" }
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": "1"
+    }
   ],
   "users": [
     {
@@ -13,12 +21,12 @@
     }
   ],
   "profile": {
-    "first": "Тимур",
-    "lastname": "Ульби",
+    "first": "Ян",
+    "lastname": "Неровный",
     "age": 22,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Moscow",
+    "currency": "EUR",
+    "country": "Ukraine",
+    "city": "Istanbul",
     "username": "admin",
     "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyz-77X11MoGE22xVjjPhbpW6lPj6I0SkcTQ&usqp=CAU"
   }
