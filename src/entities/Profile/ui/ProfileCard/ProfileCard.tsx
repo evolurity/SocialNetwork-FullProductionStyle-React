@@ -75,7 +75,7 @@ export const ProfileCard = (props:ProfileCardProps) => {
     return (
         <div className={classNames(styles.ProfileCard, mods, [className])}>
             <div>
-                {formData?.avatar && (
+                {formData?.avatar && __PROJECT__ !== 'storybook' && (
                     <div className={styles.avatarWrapper}>
                         <Avatar src={formData.avatar} alt="avatar" />
                     </div>
