@@ -7,5 +7,10 @@
   "yourAge": "Ваш возраст",
   "yourCity": "Ваш город",
   "yourAvatar": "Введите ссылку на аватар",
-  "yourUsername": "Введите юзернейм"
+  "yourUsername": "Введите юзернейм",
+  "serverError": "Ошибка сервера",
+  "noDataError": "Недостаточно введенных данных",
+  "incorrectCountryError": "Неправильно введена страна",
+  "incorrectAgeError": "Неправильно введен возраст",
+  "incorrectUserDataError": "Данные пользователя некорректны"
 }

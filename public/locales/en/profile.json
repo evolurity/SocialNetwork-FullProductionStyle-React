@@ -7,5 +7,10 @@
   "yourAge": "Your age",
   "yourCity": "Your city",
   "yourAvatar": "Enter your avatar link",
-  "yourUsername": "Enter username"
+  "yourUsername": "Enter username",
+  "serverError": "Server error",
+  "noDataError": "No data error",
+  "incorrectCountryError": "Incorrect country",
+  "incorrectAgeError": "Incorrect age",
+  "incorrectUserDataError": "Incorrect user data"
 }
