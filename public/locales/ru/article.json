@@ -1,4 +1,5 @@
 {
   "articleNotFound": "Статья не найдена",
-  "fetchArticleError": "Произошла ошибка при загрузке статьи"
+  "fetchArticleError": "Произошла ошибка при загрузке статьи",
+  "commentBlockLabel": "Комментарии"
 }

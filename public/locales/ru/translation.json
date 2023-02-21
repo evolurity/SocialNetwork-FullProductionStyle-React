@@ -20,5 +20,6 @@
   "cancel": "Отменить",
   "save": "Сохранить",
   "selectCurrency": "Укажите валюту",
-  "selectCountry": "Укажите страну"
+  "selectCountry": "Укажите страну",
+  "commentsDoNotExists": "Комментариев нет"
 }

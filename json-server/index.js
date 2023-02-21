@@ -52,6 +52,6 @@ server.use((req, res, next) => {
 server.use(router);
 
 // запуск сервера
-server.listen(8080, () => {
-    console.log('server is running on 8080 port');
+server.listen(8069, () => {
+    console.log('server is running on 8069 port');
 });

@@ -20,5 +20,6 @@
   "cancel": "Cancel",
   "save": "Save",
   "selectCurrency": "Select currency",
-  "selectCountry": "Select country"
+  "selectCountry": "Select country",
+  "commentsDoNotExists": "Comments don`t exists"
 }

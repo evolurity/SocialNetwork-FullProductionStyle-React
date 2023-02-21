@@ -105,13 +105,16 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQJiEVUzLlly5B3wiUHTfUdys_FZ69ihj61IjZV4hyrnfYpl70NrjNd0Ftvoht_iL72ckAQ0d3EV7K1GG0"
+
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQJiEVUzLlly5B3wiUHTfUdys_FZ69ihj61IjZV4hyrnfYpl70NrjNd0Ftvoht_iL72ckAQ0d3EV7K1GG0"
     }
   ],
   "profile": {
