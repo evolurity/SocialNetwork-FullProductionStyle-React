@@ -21,5 +21,8 @@
   "save": "Save",
   "selectCurrency": "Select currency",
   "selectCountry": "Select country",
-  "commentsDoNotExists": "Comments don`t exists"
+  "commentsDoNotExists": "Comments don`t exists",
+  "send": "Send",
+  "enterCommentText": "Enter comment text",
+  "profile": "Profile"
 }

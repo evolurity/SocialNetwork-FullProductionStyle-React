@@ -12,6 +12,7 @@ const data = {
     first: 'evolurity',
     city: 'Belgrad',
     currency: Currency.USD,
+    id: '1',
 };
 
 describe('updateProfileData.test', () => {

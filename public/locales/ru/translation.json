@@ -21,5 +21,8 @@
   "save": "Сохранить",
   "selectCurrency": "Укажите валюту",
   "selectCountry": "Укажите страну",
-  "commentsDoNotExists": "Комментариев нет"
+  "commentsDoNotExists": "Комментариев нет",
+  "send": "Отправить",
+  "enterCommentText": "Введите текст комментария",
+  "profile": "Профиль"
 }

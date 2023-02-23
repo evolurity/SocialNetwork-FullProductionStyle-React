@@ -1,9 +1,10 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import { useTranslation } from 'react-i18next';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Text } from 'shared/ui/Text/Text';
 
 import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
+import { RoutePath } from 'shared/config/routeConfig/routeConfig';
+import { AppLink } from 'shared/ui/AppLink/AppLink';
 import styles from './CommentCard.module.scss';
 import { Comment } from '../../model/types/comment';
 
@@ -14,11 +15,9 @@ interface CommentCardProps {
 }
 
 export const CommentCard = ({ className, comment, isLoading }: CommentCardProps) => {
-    const { t } = useTranslation();
-
     if (isLoading) {
         return (
-            <div className={classNames(styles.CommentCard, {}, [className])}>
+            <div className={classNames(styles.CommentCard, {}, [className, styles.loading])}>
                 <div className={styles.header}>
                     <Skeleton width={30} height={30} border="50%" />
                     <Skeleton className={styles.username} height={16} width={100} />
@@ -28,13 +27,17 @@ export const CommentCard = ({ className, comment, isLoading }: CommentCardProps)
         );
     }
 
+    if (!comment) {
+        return null;
+    }
+
     return (
         <div className={classNames(styles.CommentCard, {}, [className])}>
-            <div className={styles.header}>
-                {comment?.user.avatar ? <Avatar size={30} src={comment?.user.avatar} /> : null}
-                <Text className={styles.username} title={comment?.user.username} />
-            </div>
-            <Text className={styles.text} text={comment?.text} />
+            <AppLink to={`${RoutePath.profile}${comment.user.id}`} className={styles.header}>
+                {comment.user.avatar ? <Avatar size={30} src={comment.user.avatar} /> : null}
+                <Text className={styles.username} title={comment.user.username} />
+            </AppLink>
+            <Text className={styles.text} text={comment.text} />
         </div>
     );
 };
