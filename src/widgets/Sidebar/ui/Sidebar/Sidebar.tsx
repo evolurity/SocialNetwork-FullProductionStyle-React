@@ -6,7 +6,7 @@ import { Button, ButtonSize, ButtonTheme } from 'shared/ui/Button/Button';
 
 import { useSelector } from 'react-redux';
 import { getUserAuthData } from 'entities/User';
-import { SidebarItemsList } from '../../model/items';
+import { getSidebarItems } from '../../model/selectors/getSidebarItems';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 import styles from './Sidebar.module.scss';
 
@@ -16,15 +16,16 @@ interface SidebarProps {
 
 export const Sidebar = memo(({ className }:SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
+    const sidebarItemsList = useSelector(getSidebarItems);
 
     const isAuth = useSelector(getUserAuthData);
 
-    const sidebarItemActiveList = useMemo(() => SidebarItemsList.filter((item) => {
+    const sidebarItemActiveList = useMemo(() => sidebarItemsList.filter((item) => {
         if (!isAuth && item.authOnly) {
             return false;
         }
         return item;
-    }), [isAuth]);
+    }), [isAuth, sidebarItemsList]);
 
     const onToggle = () => {
         setCollapsed((prev) => !prev);
